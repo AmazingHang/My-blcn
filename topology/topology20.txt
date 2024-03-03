@@ -1,0 +1,122 @@
+# any empty lines and lines starting with '#' symbol is ignored
+#
+# The file should contain exactly two sections: router and link, each starting with the corresponding keyword
+#
+# router section defines topology nodes and their relative positions (e.g., to use in visualizer)
+router
+
+# each line in this section represents one router and should have the following data
+# node  comment     yPos    xPos
+Node0	NA	380	88
+Node1	NA	-358	-80
+Node2	NA	16	344
+Node3	NA	43	-220
+Node4	NA	3	21
+Node5	NA	179	383
+Node6	NA	-84	-131
+Node7	NA	243	-81
+Node8	NA	178	-391
+Node9	NA	237	220
+Node10	NA	119	177
+Node11	NA	-185	-8
+Node12	NA	-203	-288
+Node13	NA	-29	193
+Node14	NA	-358	87
+Node15	NA	-179	281
+Node16	NA	-204	176
+Node17	NA	247	-267
+Node18	NA	75	-104
+Node19	NA	-119	-400
+
+
+# Note that `node` can be any string. It is possible to access to the node by name using Names::Find, see examples.
+
+# link section defines point-to-point links between nodes and characteristics of these links
+link
+
+# Each line should be in the following format (only first two are required, the rest can be omitted)
+# srcNode   dstNode     bandwidth   metric  delay   queue
+# bandwidth: link bandwidth
+# metric: routing metric
+# delay:  link delay
+# queue:  MaxPackets for transmission queue on the link (both directions)
+Node7	Node17	18Mbps	1	490ms	50000
+Node7	Node0	6Mbps	1	379ms	50000
+Node7	Node12	10Mbps	1	467ms	50000
+Node7	Node16	13Mbps	1	257ms	50000
+Node7	Node18	16Mbps	1	371ms	50000
+Node7	Node2	11Mbps	1	483ms	50000
+Node7	Node6	19Mbps	1	450ms	50000
+Node7	Node8	6Mbps	1	125ms	50000
+Node17	Node3	8Mbps	1	365ms	50000
+Node17	Node10	18Mbps	1	284ms	50000
+Node17	Node18	17Mbps	1	191ms	50000
+Node17	Node4	10Mbps	1	283ms	50000
+Node17	Node8	15Mbps	1	215ms	50000
+Node17	Node11	13Mbps	1	461ms	50000
+Node17	Node19	11Mbps	1	203ms	50000
+Node4	Node9	14Mbps	1	204ms	50000
+Node4	Node11	13Mbps	1	125ms	50000
+Node4	Node13	7Mbps	1	265ms	50000
+Node4	Node8	6Mbps	1	116ms	50000
+Node4	Node1	14Mbps	1	320ms	50000
+Node4	Node5	18Mbps	1	457ms	50000
+Node4	Node14	12Mbps	1	430ms	50000
+Node9	Node0	12Mbps	1	484ms	50000
+Node9	Node5	11Mbps	1	217ms	50000
+Node9	Node3	14Mbps	1	426ms	50000
+Node9	Node11	14Mbps	1	158ms	50000
+Node9	Node13	13Mbps	1	190ms	50000
+Node9	Node15	15Mbps	1	120ms	50000
+Node9	Node2	6Mbps	1	121ms	50000
+Node5	Node10	20Mbps	1	192ms	50000
+Node5	Node0	14Mbps	1	223ms	50000
+Node5	Node16	9Mbps	1	326ms	50000
+Node5	Node13	11Mbps	1	148ms	50000
+Node5	Node6	14Mbps	1	224ms	50000
+Node5	Node2	12Mbps	1	210ms	50000
+Node10	Node15	13Mbps	1	435ms	50000
+Node10	Node14	6Mbps	1	140ms	50000
+Node10	Node2	9Mbps	1	218ms	50000
+Node10	Node6	7Mbps	1	116ms	50000
+Node10	Node18	10Mbps	1	365ms	50000
+Node10	Node0	8Mbps	1	293ms	50000
+Node0	Node2	11Mbps	1	113ms	50000
+Node0	Node13	19Mbps	1	420ms	50000
+Node0	Node8	13Mbps	1	123ms	50000
+Node0	Node3	6Mbps	1	119ms	50000
+Node8	Node18	9Mbps	1	422ms	50000
+Node8	Node6	17Mbps	1	233ms	50000
+Node8	Node19	6Mbps	1	218ms	50000
+Node8	Node12	6Mbps	1	486ms	50000
+Node18	Node12	13Mbps	1	486ms	50000
+Node18	Node15	13Mbps	1	206ms	50000
+Node18	Node14	12Mbps	1	474ms	50000
+Node18	Node3	7Mbps	1	231ms	50000
+Node11	Node14	7Mbps	1	392ms	50000
+Node11	Node2	6Mbps	1	406ms	50000
+Node11	Node1	19Mbps	1	423ms	50000
+Node11	Node15	9Mbps	1	373ms	50000
+Node11	Node19	7Mbps	1	419ms	50000
+Node14	Node13	19Mbps	1	289ms	50000
+Node14	Node1	6Mbps	1	324ms	50000
+Node14	Node16	8Mbps	1	181ms	50000
+Node14	Node12	18Mbps	1	490ms	50000
+Node2	Node1	19Mbps	1	181ms	50000
+Node2	Node16	19Mbps	1	481ms	50000
+Node1	Node15	5Mbps	1	384ms	50000
+Node1	Node19	16Mbps	1	269ms	50000
+Node1	Node3	16Mbps	1	142ms	50000
+Node1	Node6	9Mbps	1	464ms	50000
+Node15	Node3	14Mbps	1	316ms	50000
+Node15	Node16	16Mbps	1	484ms	50000
+Node15	Node13	7Mbps	1	417ms	50000
+Node12	Node3	15Mbps	1	372ms	50000
+Node12	Node19	12Mbps	1	378ms	50000
+Node12	Node6	6Mbps	1	323ms	50000
+Node12	Node16	7Mbps	1	344ms	50000
+Node3	Node19	19Mbps	1	303ms	50000
+Node13	Node19	12Mbps	1	383ms	50000
+Node13	Node16	17Mbps	1	325ms	50000
+Node19	Node6	18Mbps	1	381ms	50000
+Node16	Node6	16Mbps	1	420ms	50000

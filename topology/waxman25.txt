@@ -1,0 +1,54 @@
+router
+# node comment yPos xPos
+Node0	NA	395	-80
+Node1	NA	252	-131
+Node2	NA	322	-194
+Node3	NA	148	52
+Node4	NA	-60	39
+Node5	NA	-219	22
+Node6	NA	516	-88
+Node7	NA	142	201
+Node8	NA	-390	13
+Node9	NA	233	-331
+Node10	NA	334	-585
+Node11	NA	-521	91
+Node12	NA	388	17
+Node13	NA	-534	224
+Node14	NA	-625	44
+Node15	NA	251	163
+Node16	NA	149	320
+Node17	NA	333	252
+Node18	NA	294	-475
+Node19	NA	-500	348
+Node20	NA	-448	458
+Node21	NA	-455	-73
+Node22	NA	144	-393
+Node23	NA	-384	537
+Node24	NA	214	-433
+
+link
+# srcNode dstNode bandwidth metric delay queue
+Node0	Node6	116Mbps	1	38ms	60
+Node0	Node12	104Mbps	1	21ms	60
+Node0	Node1	107Mbps	1	22ms	60
+Node1	Node2	124Mbps	1	39ms	60
+Node1	Node9	127Mbps	1	17ms	60
+Node1	Node3	119Mbps	1	35ms	60
+Node3	Node7	124Mbps	1	33ms	60
+Node3	Node15	128Mbps	1	18ms	60
+Node3	Node4	132Mbps	1	25ms	60
+Node4	Node5	106Mbps	1	32ms	60
+Node5	Node8	135Mbps	1	19ms	60
+Node7	Node16	120Mbps	1	11ms	60
+Node8	Node21	104Mbps	1	36ms	60
+Node8	Node11	124Mbps	1	39ms	60
+Node9	Node18	109Mbps	1	42ms	60
+Node9	Node22	115Mbps	1	34ms	60
+Node9	Node24	118Mbps	1	16ms	60
+Node10	Node18	127Mbps	1	44ms	60
+Node11	Node14	120Mbps	1	41ms	60
+Node11	Node13	124Mbps	1	49ms	60
+Node13	Node19	114Mbps	1	16ms	60
+Node15	Node17	134Mbps	1	32ms	60
+Node19	Node20	101Mbps	1	16ms	60
+Node20	Node23	114Mbps	1	27ms	60

@@ -1,0 +1,767 @@
+Waf: Entering directory `/home/ndnSIM/t-blockNDN-v2/build'
+Waf: Leaving directory `/home/ndnSIM/t-blockNDN-v2/build'
+'build' finished successfully (0.442s)
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++1.000000000s -1 ndnBlockchainApp:makeBlockchain(): [DEBUG] make chain 校对
++5.000000000s -1 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.010006000s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.010006000s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.010006000s 5 ndnBlockchainApp:handlePullNuLessThanLocalHighest(): [DEBUG] 本地区块号是最高区块号 send blockNum : 60
++5.010006000s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.010006000s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.010006000s 3 ndnBlockchainApp:handlePullNuLessThanLocalHighest(): [DEBUG] 本地区块号是最高区块号 send blockNum : 40
++5.010006000s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.010006000s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.010006000s 7 ndnBlockchainApp:handlePullNuLessThanLocalHighest(): [DEBUG] 本地区块号是最高区块号 send blockNum : 50
++5.010006000s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.020012000s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.020012000s 0 ndnBlockchainApp:handlePullNuLessThanLocalHighest(): [DEBUG] 本地区块号是最高区块号 send blockNum : 80
++5.020012000s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.020012000s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.020012000s 2 ndnBlockchainApp:handlePullNuLessThanLocalHighest(): [DEBUG] 本地区块号是最高区块号 send blockNum : 20
++5.020012000s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.020012000s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.020012000s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.020012000s 6 ndnBlockchainApp:handlePullNuLessThanLocalHighest(): [DEBUG] 本地区块号是最高区块号 send blockNum : 70
++5.020012000s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.020037120s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/Node4/10/pull_BlockchainStatus
++5.020037120s 4 ndnBlockchainApp:handlePullNumForUpdate(): [DEBUG] 未更新，收到数据，更新目标值
++5.020037120s 4 ndnBlockchainApp:requestSpecificStatus(): [DEBUG] 目标为:60
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/11/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/12/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/13/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/14/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/15/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/16/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/17/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/18/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/19/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/20/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/21/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/22/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/23/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/24/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/25/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/26/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/27/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/28/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/29/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/30/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/31/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/32/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/33/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/34/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/35/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/36/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/37/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/38/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/39/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/40/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/41/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/42/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/43/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/44/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/45/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/46/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/47/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/48/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/49/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/50/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/51/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/52/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/53/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/54/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/55/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/56/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/57/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/58/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/59/update_SpecificBcS
++5.020037120s 4 ndnBlockchainApp:SendPacket(): [INFO ] Consumer > Interest for /ndn.blockchain/60/update_SpecificBcS
++5.030042320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.030042320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.030042320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030042320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.030042320s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030042320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.030042320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030047520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.030047520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.030047520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030047520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.030047520s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030047520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.030047520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030052720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.030052720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.030052720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030052720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.030052720s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030052720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.030052720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030057920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.030057920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.030057920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030057920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.030057920s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030057920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.030057920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030063120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.030063120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.030063120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030063120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.030063120s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030063120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.030063120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030068320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.030068320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.030068320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030068320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.030068320s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030068320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.030068320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030073520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.030073520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.030073520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030073520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.030073520s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030073520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.030073520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030078720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.030078720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.030078720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030078720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.030078720s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030078720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.030078720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030083920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.030083920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.030083920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030083920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.030083920s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030083920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.030083920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030089120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.030089120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.030089120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030089120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.030089120s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030089120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.030089120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030094320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.030094320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.030094320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030094320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.030094320s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030094320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.030094320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030099520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.030099520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.030099520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030099520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.030099520s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030099520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.030099520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030104720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.030104720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.030104720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030104720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.030104720s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030104720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.030104720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030109920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.030109920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.030109920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030109920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.030109920s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030109920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.030109920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030115120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.030115120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.030115120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030115120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.030115120s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030115120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.030115120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030120320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.030120320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.030120320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030120320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.030120320s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030120320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.030120320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030125520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.030125520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.030125520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030125520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.030125520s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030125520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.030125520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030130720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.030130720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.030130720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030130720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.030130720s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030130720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.030130720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030135920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.030135920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.030135920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030135920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.030135920s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030135920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.030135920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030141120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.030141120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.030141120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030141120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.030141120s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030141120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.030141120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030146320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.030146320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.030146320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030146320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.030146320s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030146320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.030146320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030151520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.030151520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.030151520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030151520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.030151520s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030151520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.030151520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030156720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.030156720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.030156720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030156720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.030156720s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030156720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.030156720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030161920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.030161920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.030161920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030161920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.030161920s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030161920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.030161920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030167120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.030167120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.030167120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030167120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.030167120s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030167120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.030167120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030172320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.030172320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.030172320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030172320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.030172320s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030172320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.030172320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030177520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.030177520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.030177520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030177520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.030177520s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030177520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.030177520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030182720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.030182720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.030182720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030182720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.030182720s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030182720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.030182720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030187920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.030187920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.030187920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030187920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.030187920s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030187920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.030187920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030193120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.030193120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.030193120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030193120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.030193120s 3 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030193120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.030193120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030198320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.030198320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.030198320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030198320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.030198320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.030198320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030203520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.030203520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.030203520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030203520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.030203520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.030203520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030208720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.030208720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.030208720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030208720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.030208720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.030208720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030213920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.030213920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.030213920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030213920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.030213920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.030213920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030219120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.030219120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.030219120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030219120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.030219120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.030219120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030224320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.030224320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.030224320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030224320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.030224320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.030224320s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030229520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.030229520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.030229520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030229520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.030229520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.030229520s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030234720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.030234720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.030234720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030234720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.030234720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.030234720s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030239920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.030239920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.030239920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030239920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.030239920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.030239920s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030245120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.030245120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.030245120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030245120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.030245120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.030245120s 7 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030250320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.030250320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.030250320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030250320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.030250320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.030255520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.030255520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.030255520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030255520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.030255520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.030260720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.030260720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.030260720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030260720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.030260720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.030265920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.030265920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.030265920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030265920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.030265920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.030271120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.030271120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.030271120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030271120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.030271120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.030276320s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.030276320s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.030276320s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030276320s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.030276320s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.030281520s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.030281520s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.030281520s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030281520s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.030281520s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.030286720s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.030286720s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.030286720s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030286720s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.030286720s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.030291920s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.030291920s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.030291920s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030291920s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.030291920s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.030297120s 1 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.030297120s 5 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.030297120s 5 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.030297120s 3 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.030297120s 7 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.040047520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.040047520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040047520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.040047520s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040047520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.040047520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/11/update_SpecificBcS
++5.040047520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040052720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.040052720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040052720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.040052720s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040052720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.040052720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/12/update_SpecificBcS
++5.040052720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040057920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.040057920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040057920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.040057920s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040057920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.040057920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/13/update_SpecificBcS
++5.040057920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040063120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.040063120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040063120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.040063120s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040063120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.040063120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/14/update_SpecificBcS
++5.040063120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040068320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.040068320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040068320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.040068320s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040068320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.040068320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/15/update_SpecificBcS
++5.040068320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040073520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.040073520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040073520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.040073520s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040073520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.040073520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/16/update_SpecificBcS
++5.040073520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040078720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.040078720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040078720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.040078720s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040078720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.040078720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/17/update_SpecificBcS
++5.040078720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040083920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.040083920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040083920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.040083920s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040083920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.040083920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/18/update_SpecificBcS
++5.040083920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040089120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.040089120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040089120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.040089120s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040089120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.040089120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/19/update_SpecificBcS
++5.040089120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040094320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.040094320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040094320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.040094320s 2 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040094320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.040094320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/20/update_SpecificBcS
++5.040094320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040099520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.040099520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040099520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.040099520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.040099520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/21/update_SpecificBcS
++5.040099520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040104720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.040104720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040104720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.040104720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.040104720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/22/update_SpecificBcS
++5.040104720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040109920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.040109920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040109920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.040109920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.040109920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/23/update_SpecificBcS
++5.040109920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040115120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.040115120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040115120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.040115120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.040115120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/24/update_SpecificBcS
++5.040115120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040120320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.040120320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040120320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.040120320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.040120320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/25/update_SpecificBcS
++5.040120320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040125520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.040125520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040125520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.040125520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.040125520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/26/update_SpecificBcS
++5.040125520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040130720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.040130720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040130720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.040130720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.040130720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/27/update_SpecificBcS
++5.040130720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040135920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.040135920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040135920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.040135920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.040135920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/28/update_SpecificBcS
++5.040135920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040141120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.040141120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040141120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.040141120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.040141120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/29/update_SpecificBcS
++5.040141120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040146320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.040146320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040146320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.040146320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.040146320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/30/update_SpecificBcS
++5.040146320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040151520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.040151520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040151520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.040151520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.040151520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/31/update_SpecificBcS
++5.040151520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040156720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.040156720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040156720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.040156720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.040156720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/32/update_SpecificBcS
++5.040156720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040161920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.040161920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040161920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.040161920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.040161920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/33/update_SpecificBcS
++5.040161920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040167120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.040167120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040167120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.040167120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.040167120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/34/update_SpecificBcS
++5.040167120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040172320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.040172320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040172320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.040172320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.040172320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/35/update_SpecificBcS
++5.040172320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040177520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.040177520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040177520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.040177520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.040177520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/36/update_SpecificBcS
++5.040177520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040182720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.040182720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040182720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.040182720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.040182720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/37/update_SpecificBcS
++5.040182720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040187920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.040187920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040187920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.040187920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.040187920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/38/update_SpecificBcS
++5.040187920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040193120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.040193120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040193120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.040193120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.040193120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/39/update_SpecificBcS
++5.040193120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040198320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.040198320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040198320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.040198320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.040198320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/40/update_SpecificBcS
++5.040198320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040203520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.040203520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040203520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.040203520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.040203520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/41/update_SpecificBcS
++5.040203520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040208720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.040208720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040208720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.040208720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.040208720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/42/update_SpecificBcS
++5.040208720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040213920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.040213920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040213920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.040213920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.040213920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/43/update_SpecificBcS
++5.040213920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040219120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.040219120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040219120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.040219120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.040219120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/44/update_SpecificBcS
++5.040219120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040224320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.040224320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040224320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.040224320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.040224320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/45/update_SpecificBcS
++5.040224320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040229520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.040229520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040229520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.040229520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.040229520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/46/update_SpecificBcS
++5.040229520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040234720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.040234720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040234720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.040234720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.040234720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/47/update_SpecificBcS
++5.040234720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040239920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.040239920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040239920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.040239920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.040239920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/48/update_SpecificBcS
++5.040239920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040245120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.040245120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040245120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.040245120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.040245120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/49/update_SpecificBcS
++5.040245120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040250320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.040250320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040250320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.040250320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.040250320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/50/update_SpecificBcS
++5.040250320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040255520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.040255520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040255520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.040255520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.040255520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/51/update_SpecificBcS
++5.040255520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040260720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.040260720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040260720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.040260720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.040260720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/52/update_SpecificBcS
++5.040260720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040265920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.040265920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040265920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.040265920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.040265920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/53/update_SpecificBcS
++5.040265920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040271120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.040271120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040271120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.040271120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.040271120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/54/update_SpecificBcS
++5.040271120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040276320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.040276320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040276320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.040276320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.040276320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/55/update_SpecificBcS
++5.040276320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040281520s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.040281520s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040281520s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.040281520s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.040281520s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/56/update_SpecificBcS
++5.040281520s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040286720s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.040286720s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040286720s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.040286720s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.040286720s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/57/update_SpecificBcS
++5.040286720s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040291920s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.040291920s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040291920s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.040291920s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.040291920s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/58/update_SpecificBcS
++5.040291920s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040297120s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.040297120s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040297120s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.040297120s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.040297120s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/59/update_SpecificBcS
++5.040297120s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040302320s 0 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.040302320s 0 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040302320s 2 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.040302320s 8 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.040302320s 6 ndnBlockchainApp:OnInterest(): [INFO ] Recieved Interest /ndn.blockchain/60/update_SpecificBcS
++5.040302320s 6 ndnBlockchainApp:SendData(): [INFO ] Producer < Send DATA
++5.040938160s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/11/update_SpecificBcS
++5.041834000s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/12/update_SpecificBcS
++5.042729840s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/13/update_SpecificBcS
++5.043625680s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/14/update_SpecificBcS
++5.044521520s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/15/update_SpecificBcS
++5.045417360s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/16/update_SpecificBcS
++5.046313200s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/17/update_SpecificBcS
++5.047209040s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/18/update_SpecificBcS
++5.048104880s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/19/update_SpecificBcS
++5.049000800s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/20/update_SpecificBcS
++5.049896720s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/21/update_SpecificBcS
++5.050792640s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/22/update_SpecificBcS
++5.051688560s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/23/update_SpecificBcS
++5.052584480s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/24/update_SpecificBcS
++5.053480400s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/25/update_SpecificBcS
++5.054376320s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/26/update_SpecificBcS
++5.055272240s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/27/update_SpecificBcS
++5.056168160s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/28/update_SpecificBcS
++5.057064080s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/29/update_SpecificBcS
++5.057960000s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/30/update_SpecificBcS
++5.058855920s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/31/update_SpecificBcS
++5.059751840s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/32/update_SpecificBcS
++5.060647760s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/33/update_SpecificBcS
++5.061543680s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/34/update_SpecificBcS
++5.062439600s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/35/update_SpecificBcS
++5.063335520s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/36/update_SpecificBcS
++5.064231440s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/37/update_SpecificBcS
++5.065127360s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/38/update_SpecificBcS
++5.066023280s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/39/update_SpecificBcS
++5.066919200s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/40/update_SpecificBcS
++5.067815120s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/41/update_SpecificBcS
++5.068711040s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/42/update_SpecificBcS
++5.069606960s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/43/update_SpecificBcS
++5.070502880s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/44/update_SpecificBcS
++5.071398800s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/45/update_SpecificBcS
++5.072294720s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/46/update_SpecificBcS
++5.073190640s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/47/update_SpecificBcS
++5.074086560s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/48/update_SpecificBcS
++5.074982480s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/49/update_SpecificBcS
++5.075878400s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/50/update_SpecificBcS
++5.076774320s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/51/update_SpecificBcS
++5.077670240s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/52/update_SpecificBcS
++5.078566160s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/53/update_SpecificBcS
++5.079462080s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/54/update_SpecificBcS
++5.080358000s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/55/update_SpecificBcS
++5.081253920s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/56/update_SpecificBcS
++5.082149840s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/57/update_SpecificBcS
++5.083045760s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/58/update_SpecificBcS
++5.083941680s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/59/update_SpecificBcS
++5.084837600s 4 ndnBlockchainApp:OnData(): [INFO ] Consumer < DATA for /ndn.blockchain/60/update_SpecificBcS
++5.084837600s 4 ndnBlockchainApp:handleData_ReceivedBlock(): [DEBUG] 完成目标: 60

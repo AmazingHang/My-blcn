@@ -1,0 +1,506 @@
+# any empty lines and lines starting with '#' symbol is ignored
+#
+# The file should contain exactly two sections: router and link, each starting with the corresponding keyword
+#
+# router section defines topology nodes and their relative positions (e.g., to use in visualizer)
+router
+
+# each line in this section represents one router and should have the following data
+# node  comment     yPos    xPos
+Node0	NA	-1852	436
+Node1	NA	-1955	-1591
+Node2	NA	1576	4732
+Node3	NA	-336	3032
+Node4	NA	3049	-1924
+Node5	NA	-2685	265
+Node6	NA	620	-1425
+Node7	NA	613	-85
+Node8	NA	1494	-2109
+Node9	NA	-862	-468
+Node10	NA	-1230	-888
+Node11	NA	-5331	-3181
+Node12	NA	-93	-772
+Node13	NA	1781	464
+Node14	NA	-5234	4814
+Node15	NA	1002	293
+Node16	NA	-605	1084
+Node17	NA	3734	-2507
+Node18	NA	244	1640
+Node19	NA	-7002	-3427
+Node20	NA	1356	1234
+Node21	NA	-2954	-5821
+Node22	NA	2347	5420
+Node23	NA	-80	-4019
+Node24	NA	3332	513
+Node25	NA	2155	3243
+Node26	NA	-4361	-4020
+Node27	NA	3953	3024
+Node28	NA	2612	-2945
+Node29	NA	-6704	-394
+Node30	NA	-3007	2231
+Node31	NA	-1985	-4366
+Node32	NA	-5623	2389
+Node33	NA	-4470	-5869
+Node34	NA	278	2435
+Node35	NA	-5382	-7842
+Node36	NA	-2218	5173
+Node37	NA	6324	-4872
+Node38	NA	1864	7289
+Node39	NA	-1489	-9166
+Node40	NA	-2707	3350
+Node41	NA	-3917	3626
+Node42	NA	2482	-4004
+Node43	NA	-5002	-1538
+Node44	NA	-1106	-5473
+Node45	NA	4075	-3800
+Node46	NA	4941	13
+Node47	NA	3729	4128
+Node48	NA	-4762	7757
+Node49	NA	-6541	4382
+Node50	NA	7781	71
+Node51	NA	5293	-1359
+Node52	NA	2951	2834
+Node53	NA	3972	-4758
+Node54	NA	-4032	4345
+Node55	NA	5237	6050
+Node56	NA	-4048	8542
+Node57	NA	484	3695
+Node58	NA	-3983	5520
+Node59	NA	1499	-6458
+Node60	NA	-9477	-5116
+Node61	NA	-1166	4528
+Node62	NA	-5882	252
+Node63	NA	6409	-3561
+Node64	NA	-3718	-955
+Node65	NA	5900	6638
+Node66	NA	6085	725
+Node67	NA	2748	-4955
+Node68	NA	5271	-6537
+Node69	NA	5311	1813
+Node70	NA	-7163	-4957
+Node71	NA	-6123	1443
+Node72	NA	4970	-3143
+Node73	NA	821	-4675
+Node74	NA	5445	4304
+Node75	NA	-8201	-583
+Node76	NA	-2854	-2935
+Node77	NA	-822	-3574
+Node78	NA	-7786	1964
+Node79	NA	6331	4614
+Node80	NA	-6091	-4222
+Node81	NA	4364	-8816
+Node82	NA	1848	10000
+Node83	NA	-2724	7822
+Node84	NA	-7345	4342
+Node85	NA	8917	3976
+Node86	NA	513	7351
+Node87	NA	8613	-1328
+Node88	NA	7462	-7416
+Node89	NA	-3948	-7180
+Node90	NA	-957	6866
+Node91	NA	-1405	-7946
+Node92	NA	-1179	5645
+Node93	NA	6520	3170
+Node94	NA	-140	-7190
+Node95	NA	6831	-2317
+Node96	NA	6875	-991
+Node97	NA	-2074	8505
+Node98	NA	3253	-7044
+Node99	NA	-4657	2541
+
+
+# Note that `node` can be any string. It is possible to access to the node by name using Names::Find, see examples.
+
+# link section defines point-to-point links between nodes and characteristics of these links
+link
+
+# Each line should be in the following format (only first two are required, the rest can be omitted)
+# srcNode   dstNode     bandwidth   metric  delay   queue
+# bandwidth: link bandwidth
+# metric: routing metric
+# delay:  link delay
+# queue:  MaxPackets for transmission queue on the link (both directions)
+Node0	Node1	5Mbps	1	458ms	5000
+Node0	Node2	13Mbps	1	227ms	5000
+Node0	Node3	6Mbps	1	494ms	5000
+Node0	Node4	5Mbps	1	292ms	5000
+Node0	Node5	16Mbps	1	370ms	5000
+Node0	Node6	17Mbps	1	340ms	5000
+Node0	Node7	10Mbps	1	167ms	5000
+Node0	Node8	19Mbps	1	193ms	5000
+Node0	Node13	14Mbps	1	442ms	5000
+Node0	Node14	16Mbps	1	380ms	5000
+Node0	Node15	12Mbps	1	137ms	5000
+Node0	Node19	17Mbps	1	324ms	5000
+Node0	Node21	14Mbps	1	285ms	5000
+Node0	Node29	13Mbps	1	390ms	5000
+Node0	Node32	11Mbps	1	281ms	5000
+Node0	Node34	11Mbps	1	193ms	5000
+Node0	Node38	6Mbps	1	408ms	5000
+Node0	Node42	12Mbps	1	347ms	5000
+Node0	Node46	11Mbps	1	217ms	5000
+Node0	Node49	18Mbps	1	499ms	5000
+Node0	Node57	14Mbps	1	483ms	5000
+Node0	Node64	9Mbps	1	400ms	5000
+Node0	Node73	9Mbps	1	357ms	5000
+Node0	Node77	17Mbps	1	207ms	5000
+Node0	Node78	15Mbps	1	130ms	5000
+Node0	Node83	15Mbps	1	498ms	5000
+Node0	Node94	14Mbps	1	198ms	5000
+Node0	Node99	7Mbps	1	487ms	5000
+Node1	Node5	19Mbps	1	125ms	5000
+Node1	Node6	14Mbps	1	189ms	5000
+Node1	Node7	9Mbps	1	451ms	5000
+Node1	Node9	9Mbps	1	446ms	5000
+Node1	Node10	14Mbps	1	428ms	5000
+Node1	Node12	9Mbps	1	151ms	5000
+Node1	Node25	7Mbps	1	470ms	5000
+Node1	Node34	11Mbps	1	199ms	5000
+Node1	Node39	18Mbps	1	358ms	5000
+Node1	Node42	11Mbps	1	466ms	5000
+Node1	Node43	13Mbps	1	484ms	5000
+Node1	Node54	10Mbps	1	161ms	5000
+Node1	Node91	8Mbps	1	421ms	5000
+Node1	Node92	16Mbps	1	310ms	5000
+Node2	Node14	18Mbps	1	322ms	5000
+Node2	Node23	10Mbps	1	314ms	5000
+Node2	Node48	9Mbps	1	208ms	5000
+Node2	Node55	5Mbps	1	454ms	5000
+Node2	Node66	7Mbps	1	234ms	5000
+Node2	Node85	15Mbps	1	147ms	5000
+Node3	Node5	18Mbps	1	140ms	5000
+Node3	Node6	19Mbps	1	362ms	5000
+Node3	Node9	5Mbps	1	253ms	5000
+Node3	Node13	16Mbps	1	325ms	5000
+Node3	Node14	8Mbps	1	102ms	5000
+Node3	Node22	18Mbps	1	403ms	5000
+Node3	Node32	9Mbps	1	246ms	5000
+Node3	Node43	16Mbps	1	353ms	5000
+Node3	Node45	8Mbps	1	357ms	5000
+Node3	Node55	7Mbps	1	331ms	5000
+Node3	Node93	12Mbps	1	308ms	5000
+Node3	Node97	12Mbps	1	290ms	5000
+Node4	Node5	19Mbps	1	157ms	5000
+Node4	Node6	6Mbps	1	231ms	5000
+Node4	Node8	6Mbps	1	480ms	5000
+Node4	Node9	13Mbps	1	371ms	5000
+Node4	Node13	8Mbps	1	248ms	5000
+Node4	Node16	20Mbps	1	442ms	5000
+Node4	Node17	14Mbps	1	483ms	5000
+Node4	Node18	10Mbps	1	478ms	5000
+Node4	Node24	8Mbps	1	154ms	5000
+Node4	Node46	19Mbps	1	229ms	5000
+Node4	Node50	6Mbps	1	454ms	5000
+Node4	Node52	11Mbps	1	273ms	5000
+Node4	Node59	8Mbps	1	365ms	5000
+Node4	Node68	9Mbps	1	436ms	5000
+Node4	Node72	11Mbps	1	293ms	5000
+Node4	Node77	5Mbps	1	349ms	5000
+Node4	Node88	16Mbps	1	284ms	5000
+Node5	Node7	10Mbps	1	406ms	5000
+Node5	Node8	7Mbps	1	283ms	5000
+Node5	Node9	8Mbps	1	185ms	5000
+Node5	Node10	11Mbps	1	236ms	5000
+Node5	Node11	7Mbps	1	332ms	5000
+Node5	Node12	16Mbps	1	464ms	5000
+Node5	Node13	13Mbps	1	305ms	5000
+Node5	Node14	16Mbps	1	353ms	5000
+Node5	Node16	17Mbps	1	318ms	5000
+Node5	Node18	11Mbps	1	236ms	5000
+Node5	Node20	19Mbps	1	282ms	5000
+Node5	Node25	18Mbps	1	122ms	5000
+Node5	Node26	12Mbps	1	446ms	5000
+Node5	Node28	9Mbps	1	286ms	5000
+Node5	Node31	12Mbps	1	205ms	5000
+Node5	Node33	6Mbps	1	159ms	5000
+Node5	Node49	19Mbps	1	304ms	5000
+Node5	Node52	20Mbps	1	420ms	5000
+Node5	Node58	12Mbps	1	418ms	5000
+Node5	Node60	14Mbps	1	209ms	5000
+Node5	Node75	13Mbps	1	110ms	5000
+Node5	Node89	10Mbps	1	432ms	5000
+Node5	Node90	11Mbps	1	392ms	5000
+Node5	Node97	19Mbps	1	122ms	5000
+Node6	Node7	8Mbps	1	296ms	5000
+Node6	Node8	8Mbps	1	113ms	5000
+Node6	Node10	13Mbps	1	249ms	5000
+Node6	Node15	19Mbps	1	125ms	5000
+Node6	Node19	12Mbps	1	369ms	5000
+Node6	Node21	19Mbps	1	275ms	5000
+Node6	Node27	12Mbps	1	473ms	5000
+Node6	Node29	20Mbps	1	294ms	5000
+Node6	Node35	17Mbps	1	307ms	5000
+Node6	Node40	8Mbps	1	265ms	5000
+Node6	Node45	12Mbps	1	231ms	5000
+Node6	Node47	9Mbps	1	444ms	5000
+Node6	Node50	12Mbps	1	385ms	5000
+Node6	Node57	6Mbps	1	352ms	5000
+Node6	Node66	7Mbps	1	244ms	5000
+Node6	Node68	15Mbps	1	133ms	5000
+Node6	Node76	18Mbps	1	294ms	5000
+Node6	Node87	11Mbps	1	224ms	5000
+Node6	Node89	7Mbps	1	254ms	5000
+Node6	Node90	13Mbps	1	308ms	5000
+Node6	Node96	15Mbps	1	363ms	5000
+Node7	Node11	11Mbps	1	129ms	5000
+Node7	Node12	12Mbps	1	183ms	5000
+Node7	Node15	8Mbps	1	221ms	5000
+Node7	Node22	6Mbps	1	357ms	5000
+Node7	Node32	8Mbps	1	246ms	5000
+Node7	Node38	17Mbps	1	295ms	5000
+Node7	Node51	12Mbps	1	182ms	5000
+Node7	Node57	14Mbps	1	273ms	5000
+Node7	Node67	7Mbps	1	476ms	5000
+Node7	Node72	11Mbps	1	125ms	5000
+Node7	Node74	18Mbps	1	408ms	5000
+Node7	Node80	12Mbps	1	254ms	5000
+Node7	Node95	14Mbps	1	240ms	5000
+Node8	Node10	18Mbps	1	229ms	5000
+Node8	Node37	10Mbps	1	477ms	5000
+Node8	Node40	8Mbps	1	482ms	5000
+Node8	Node45	16Mbps	1	138ms	5000
+Node9	Node11	13Mbps	1	209ms	5000
+Node9	Node16	9Mbps	1	375ms	5000
+Node9	Node17	17Mbps	1	187ms	5000
+Node9	Node20	9Mbps	1	357ms	5000
+Node9	Node21	6Mbps	1	349ms	5000
+Node9	Node24	11Mbps	1	272ms	5000
+Node9	Node27	15Mbps	1	409ms	5000
+Node9	Node30	7Mbps	1	366ms	5000
+Node9	Node33	12Mbps	1	371ms	5000
+Node9	Node45	5Mbps	1	291ms	5000
+Node9	Node49	7Mbps	1	303ms	5000
+Node9	Node53	16Mbps	1	411ms	5000
+Node9	Node61	12Mbps	1	325ms	5000
+Node9	Node63	11Mbps	1	358ms	5000
+Node9	Node69	8Mbps	1	300ms	5000
+Node9	Node70	5Mbps	1	471ms	5000
+Node9	Node71	5Mbps	1	417ms	5000
+Node9	Node79	6Mbps	1	328ms	5000
+Node9	Node80	19Mbps	1	394ms	5000
+Node9	Node84	8Mbps	1	285ms	5000
+Node10	Node11	16Mbps	1	124ms	5000
+Node10	Node12	13Mbps	1	325ms	5000
+Node10	Node15	10Mbps	1	348ms	5000
+Node10	Node17	12Mbps	1	391ms	5000
+Node10	Node19	13Mbps	1	499ms	5000
+Node10	Node21	17Mbps	1	251ms	5000
+Node10	Node24	17Mbps	1	497ms	5000
+Node10	Node26	8Mbps	1	110ms	5000
+Node10	Node29	5Mbps	1	499ms	5000
+Node10	Node31	6Mbps	1	476ms	5000
+Node10	Node36	17Mbps	1	344ms	5000
+Node10	Node41	12Mbps	1	455ms	5000
+Node10	Node42	10Mbps	1	457ms	5000
+Node10	Node44	9Mbps	1	278ms	5000
+Node10	Node51	11Mbps	1	300ms	5000
+Node10	Node52	6Mbps	1	149ms	5000
+Node10	Node53	19Mbps	1	460ms	5000
+Node10	Node58	19Mbps	1	171ms	5000
+Node10	Node59	14Mbps	1	204ms	5000
+Node10	Node62	10Mbps	1	179ms	5000
+Node10	Node66	16Mbps	1	160ms	5000
+Node10	Node67	14Mbps	1	408ms	5000
+Node10	Node71	14Mbps	1	462ms	5000
+Node10	Node78	16Mbps	1	129ms	5000
+Node10	Node83	17Mbps	1	326ms	5000
+Node10	Node84	5Mbps	1	339ms	5000
+Node10	Node95	19Mbps	1	485ms	5000
+Node10	Node98	13Mbps	1	189ms	5000
+Node10	Node99	6Mbps	1	308ms	5000
+Node11	Node19	7Mbps	1	497ms	5000
+Node11	Node23	15Mbps	1	428ms	5000
+Node11	Node60	14Mbps	1	194ms	5000
+Node12	Node16	17Mbps	1	408ms	5000
+Node12	Node20	6Mbps	1	207ms	5000
+Node12	Node25	11Mbps	1	116ms	5000
+Node12	Node27	11Mbps	1	264ms	5000
+Node12	Node32	15Mbps	1	257ms	5000
+Node12	Node33	7Mbps	1	139ms	5000
+Node12	Node42	10Mbps	1	145ms	5000
+Node12	Node46	16Mbps	1	157ms	5000
+Node12	Node47	10Mbps	1	183ms	5000
+Node12	Node54	7Mbps	1	176ms	5000
+Node12	Node62	10Mbps	1	311ms	5000
+Node12	Node67	14Mbps	1	458ms	5000
+Node12	Node68	19Mbps	1	133ms	5000
+Node12	Node70	10Mbps	1	385ms	5000
+Node12	Node74	13Mbps	1	128ms	5000
+Node13	Node28	17Mbps	1	398ms	5000
+Node13	Node36	18Mbps	1	157ms	5000
+Node13	Node37	10Mbps	1	105ms	5000
+Node13	Node44	18Mbps	1	488ms	5000
+Node13	Node47	13Mbps	1	315ms	5000
+Node13	Node61	9Mbps	1	179ms	5000
+Node13	Node65	16Mbps	1	334ms	5000
+Node13	Node73	14Mbps	1	495ms	5000
+Node13	Node75	10Mbps	1	349ms	5000
+Node13	Node79	10Mbps	1	310ms	5000
+Node13	Node95	19Mbps	1	338ms	5000
+Node14	Node29	8Mbps	1	108ms	5000
+Node14	Node30	6Mbps	1	424ms	5000
+Node14	Node56	16Mbps	1	187ms	5000
+Node15	Node23	19Mbps	1	291ms	5000
+Node15	Node26	13Mbps	1	286ms	5000
+Node15	Node34	15Mbps	1	429ms	5000
+Node15	Node46	17Mbps	1	477ms	5000
+Node15	Node61	7Mbps	1	433ms	5000
+Node15	Node87	17Mbps	1	476ms	5000
+Node15	Node99	18Mbps	1	469ms	5000
+Node16	Node17	17Mbps	1	283ms	5000
+Node16	Node18	7Mbps	1	199ms	5000
+Node16	Node23	8Mbps	1	164ms	5000
+Node16	Node34	17Mbps	1	226ms	5000
+Node16	Node47	20Mbps	1	397ms	5000
+Node16	Node48	11Mbps	1	272ms	5000
+Node16	Node51	6Mbps	1	148ms	5000
+Node16	Node56	6Mbps	1	336ms	5000
+Node16	Node91	13Mbps	1	126ms	5000
+Node17	Node18	15Mbps	1	327ms	5000
+Node17	Node24	10Mbps	1	207ms	5000
+Node17	Node28	20Mbps	1	169ms	5000
+Node17	Node39	20Mbps	1	293ms	5000
+Node17	Node51	9Mbps	1	448ms	5000
+Node17	Node63	19Mbps	1	369ms	5000
+Node17	Node69	8Mbps	1	457ms	5000
+Node17	Node88	6Mbps	1	456ms	5000
+Node17	Node93	15Mbps	1	265ms	5000
+Node18	Node20	9Mbps	1	258ms	5000
+Node18	Node22	15Mbps	1	321ms	5000
+Node18	Node36	17Mbps	1	373ms	5000
+Node18	Node44	5Mbps	1	456ms	5000
+Node18	Node53	20Mbps	1	388ms	5000
+Node18	Node54	14Mbps	1	306ms	5000
+Node18	Node58	8Mbps	1	244ms	5000
+Node18	Node62	19Mbps	1	251ms	5000
+Node18	Node86	13Mbps	1	490ms	5000
+Node18	Node93	16Mbps	1	334ms	5000
+Node19	Node35	10Mbps	1	174ms	5000
+Node19	Node60	15Mbps	1	320ms	5000
+Node19	Node75	9Mbps	1	142ms	5000
+Node20	Node22	7Mbps	1	483ms	5000
+Node20	Node27	12Mbps	1	238ms	5000
+Node20	Node30	16Mbps	1	475ms	5000
+Node20	Node41	14Mbps	1	169ms	5000
+Node20	Node98	16Mbps	1	485ms	5000
+Node21	Node33	6Mbps	1	109ms	5000
+Node21	Node39	14Mbps	1	377ms	5000
+Node22	Node25	13Mbps	1	160ms	5000
+Node22	Node56	11Mbps	1	314ms	5000
+Node22	Node57	19Mbps	1	251ms	5000
+Node22	Node72	7Mbps	1	164ms	5000
+Node22	Node74	5Mbps	1	325ms	5000
+Node22	Node82	14Mbps	1	459ms	5000
+Node23	Node26	8Mbps	1	171ms	5000
+Node23	Node31	19Mbps	1	271ms	5000
+Node23	Node35	10Mbps	1	300ms	5000
+Node23	Node37	7Mbps	1	169ms	5000
+Node23	Node53	16Mbps	1	204ms	5000
+Node23	Node59	11Mbps	1	419ms	5000
+Node24	Node37	15Mbps	1	343ms	5000
+Node24	Node59	9Mbps	1	427ms	5000
+Node24	Node64	18Mbps	1	478ms	5000
+Node24	Node65	7Mbps	1	456ms	5000
+Node24	Node74	20Mbps	1	445ms	5000
+Node24	Node86	18Mbps	1	422ms	5000
+Node25	Node28	10Mbps	1	188ms	5000
+Node25	Node30	18Mbps	1	390ms	5000
+Node25	Node50	12Mbps	1	108ms	5000
+Node25	Node61	6Mbps	1	343ms	5000
+Node25	Node82	8Mbps	1	232ms	5000
+Node25	Node93	13Mbps	1	112ms	5000
+Node26	Node35	13Mbps	1	290ms	5000
+Node26	Node44	9Mbps	1	261ms	5000
+Node26	Node71	14Mbps	1	324ms	5000
+Node27	Node38	12Mbps	1	126ms	5000
+Node28	Node43	6Mbps	1	276ms	5000
+Node28	Node50	18Mbps	1	293ms	5000
+Node28	Node63	14Mbps	1	478ms	5000
+Node28	Node81	19Mbps	1	445ms	5000
+Node29	Node41	15Mbps	1	435ms	5000
+Node29	Node70	15Mbps	1	133ms	5000
+Node30	Node31	16Mbps	1	106ms	5000
+Node30	Node41	8Mbps	1	250ms	5000
+Node30	Node43	17Mbps	1	330ms	5000
+Node30	Node62	17Mbps	1	297ms	5000
+Node30	Node76	13Mbps	1	132ms	5000
+Node30	Node86	12Mbps	1	315ms	5000
+Node30	Node97	5Mbps	1	427ms	5000
+Node31	Node72	13Mbps	1	273ms	5000
+Node33	Node39	18Mbps	1	177ms	5000
+Node33	Node60	15Mbps	1	324ms	5000
+Node33	Node77	16Mbps	1	401ms	5000
+Node33	Node91	20Mbps	1	164ms	5000
+Node34	Node36	16Mbps	1	144ms	5000
+Node34	Node40	10Mbps	1	467ms	5000
+Node34	Node54	19Mbps	1	401ms	5000
+Node34	Node55	17Mbps	1	363ms	5000
+Node34	Node58	17Mbps	1	323ms	5000
+Node34	Node64	20Mbps	1	135ms	5000
+Node34	Node65	7Mbps	1	493ms	5000
+Node34	Node67	13Mbps	1	239ms	5000
+Node34	Node73	16Mbps	1	349ms	5000
+Node34	Node92	6Mbps	1	168ms	5000
+Node36	Node38	18Mbps	1	427ms	5000
+Node36	Node40	9Mbps	1	185ms	5000
+Node36	Node56	15Mbps	1	249ms	5000
+Node36	Node64	13Mbps	1	463ms	5000
+Node36	Node78	8Mbps	1	346ms	5000
+Node36	Node82	20Mbps	1	204ms	5000
+Node36	Node90	7Mbps	1	417ms	5000
+Node37	Node68	19Mbps	1	365ms	5000
+Node38	Node65	16Mbps	1	344ms	5000
+Node38	Node97	14Mbps	1	362ms	5000
+Node40	Node48	17Mbps	1	364ms	5000
+Node40	Node49	12Mbps	1	436ms	5000
+Node40	Node77	15Mbps	1	156ms	5000
+Node40	Node84	16Mbps	1	498ms	5000
+Node40	Node86	13Mbps	1	344ms	5000
+Node41	Node48	18Mbps	1	315ms	5000
+Node41	Node52	6Mbps	1	270ms	5000
+Node42	Node63	6Mbps	1	172ms	5000
+Node42	Node69	19Mbps	1	148ms	5000
+Node42	Node81	13Mbps	1	434ms	5000
+Node43	Node80	17Mbps	1	150ms	5000
+Node45	Node66	15Mbps	1	361ms	5000
+Node45	Node81	9Mbps	1	174ms	5000
+Node45	Node98	17Mbps	1	231ms	5000
+Node47	Node55	10Mbps	1	198ms	5000
+Node51	Node95	19Mbps	1	482ms	5000
+Node52	Node85	18Mbps	1	257ms	5000
+Node53	Node88	18Mbps	1	408ms	5000
+Node53	Node96	17Mbps	1	357ms	5000
+Node55	Node69	19Mbps	1	456ms	5000
+Node55	Node82	19Mbps	1	360ms	5000
+Node55	Node85	18Mbps	1	450ms	5000
+Node55	Node96	15Mbps	1	407ms	5000
+Node56	Node83	8Mbps	1	311ms	5000
+Node56	Node84	19Mbps	1	350ms	5000
+Node57	Node76	11Mbps	1	110ms	5000
+Node57	Node79	10Mbps	1	110ms	5000
+Node57	Node90	9Mbps	1	376ms	5000
+Node57	Node99	14Mbps	1	247ms	5000
+Node59	Node73	9Mbps	1	148ms	5000
+Node59	Node76	9Mbps	1	393ms	5000
+Node59	Node98	5Mbps	1	327ms	5000
+Node60	Node70	8Mbps	1	418ms	5000
+Node61	Node71	10Mbps	1	219ms	5000
+Node63	Node85	8Mbps	1	463ms	5000
+Node63	Node87	14Mbps	1	410ms	5000
+Node63	Node94	15Mbps	1	331ms	5000
+Node64	Node78	12Mbps	1	206ms	5000
+Node64	Node80	14Mbps	1	122ms	5000
+Node64	Node94	14Mbps	1	451ms	5000
+Node67	Node88	17Mbps	1	393ms	5000
+Node69	Node87	13Mbps	1	366ms	5000
+Node69	Node92	12Mbps	1	101ms	5000
+Node70	Node89	9Mbps	1	270ms	5000
+Node71	Node75	7Mbps	1	179ms	5000
+Node71	Node92	5Mbps	1	123ms	5000
+Node72	Node81	12Mbps	1	262ms	5000
+Node74	Node79	6Mbps	1	160ms	5000
+Node77	Node89	19Mbps	1	401ms	5000
+Node77	Node96	12Mbps	1	237ms	5000
+Node81	Node91	7Mbps	1	238ms	5000
+Node82	Node83	13Mbps	1	347ms	5000
+Node89	Node94	19Mbps	1	104ms	5000
