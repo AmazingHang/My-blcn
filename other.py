@@ -7,7 +7,7 @@ finish_pull_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:OnInterest\(\): \[I
 new_block_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:SendPacket\(\): \[INFO \] Consumer > Interest for \/ndnblockchain\/request\/newblock\/(\d+)\/"
 receive_new_block_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:handleData_ReceivedBlock\(\): \[DEBUG\] 完成目标: 101"
 hop_count_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:OnInterest\(\): \[DEBUG\] ====Hop count: (\d+)"
-data_file = "./tp300out.log"
+data_file = "./out.log"
 node_num = 20
 finish_block_nodes_time = {}
 receive_new_block_nodes_time = {}

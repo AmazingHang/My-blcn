@@ -2,11 +2,9 @@
 #define NDNBCAPP_HPP
 
 #include "BBlock.hpp"
-
 #include "ns3/ndnSIM/apps/ndn-app.hpp"
 
 using namespace std;
-
 namespace ns3
 {
   class ndnBlockchainApp : public ndn::App
@@ -17,7 +15,12 @@ namespace ns3
 
     std::string nameOfNode;
     int64_t cssz = 50;
-
+    enum STATUS
+    {
+      IDLE,
+      UPDATING_TARGET,
+      TEMP_UPDATED,
+    };
     int localHighestBlockNumber = 0;
 
     std::list<BBlock> blockChain;
@@ -25,7 +28,7 @@ namespace ns3
 
     std::vector<std::pair<std::string, std::string>> trList;
     BBlock temporaryBlock;
-
+    STATUS my_status = IDLE;
     int targetNum = 0; // 目标值
     int maxNetNum = 0; // 已知最大值
 
@@ -47,27 +50,16 @@ namespace ns3
     void requestSpecificStatus(int targetNum, int originNum);
 
   private:
-    void sendBlockAckRequests(const std::vector<int> &hashList);
-    void sendGroupedBlockAckRequests(const std::vector<int> &hashList);
-    void sendIndividualBlockAckRequests(const std::vector<int> &hashList);
-    void sendBlockAckRequestWithDelay(int blockHash, Time &delayTime);
-    void sendBlockAckRequest(int blockNumber);
-
-    void handleData_ReceivedBlock(BBlock &newBlock, int receivedNum);
-    void handleUpdateCompletion();
-
     void handleInterest_PullBlockNumber(std::shared_ptr<const ndn::Interest> &interest, int receivedBlockNumber);
-    void handleInterest_UpdateSpecific(std::shared_ptr<const ndn::Interest> &interest, int receivedBlockNumber, int receivedTargetNumber);
-
     void handlePullNumGreaterThanLocalHighest(int receivedBlockNumber);
     void handlePullNuLessThanLocalHighest(std::shared_ptr<const ndn::Interest> &interest);
 
-    // void handleInteres_SpecificNumForUpdate(std::shared_ptr<const ndn::Interest> &interest, int originNum, int receivedBlockNumber);
-    void handleSpecificNumGreaterThanLocalHighest(int receivedBlockNumber);
-    void handleSpecificNumLessThanOrEqualLocalHighest(std::shared_ptr<const ndn::Interest> &interest, int originNum);
+    void handleInterest_UpdateSpecific(std::shared_ptr<const ndn::Interest> &interest, int receivedBlockNumber, int receivedTargetNumber);
 
     void handleData_PullNum(int receivedBlockNumber);
     void handlePullNumForUpdate(int receivedBlockNumber);
+
+    void handleData_ReceivedBlock(BBlock &newBlock, int receivedNum);
   };
 } // namespace ns3
 

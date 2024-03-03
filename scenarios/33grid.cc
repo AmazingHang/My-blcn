@@ -80,7 +80,8 @@ namespace ns3
         Simulator::Schedule(Seconds(1.000), &ndnBlockchainApp::makeBlockchain, apps[7], 50);
         Simulator::Schedule(Seconds(1.000), &ndnBlockchainApp::makeBlockchain, apps[8], 10);
 
-        Simulator::Schedule(Seconds(5.0), &ndnBlockchainApp::pullUpdateBCStatus, apps[4]);
+        Simulator::Schedule(Seconds(5.0), &ndnBlockchainApp::pullUpdateBCStatus, apps[8]);
+        Simulator::Schedule(Seconds(8.0), &ndnBlockchainApp::NewBlockandPush, apps[8]);
 
         Simulator::Stop(Seconds(endTime * 2));
         // SCHEDULER END

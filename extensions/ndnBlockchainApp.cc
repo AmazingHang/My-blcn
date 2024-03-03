@@ -72,21 +72,20 @@ namespace ns3
   void
   ndnBlockchainApp::NewBlockandPush()
   {
-    if (localHighestBlockNumber < targetNum)
+    if (my_status == UPDATING_TARGET)
     {
-      NS_LOG_DEBUG("更新不可创新块！");
-      return;
+      NS_LOG_DEBUG("只有更新完成的节点才可以创建新区块");
     }
-    if (targetNum < localHighestBlockNumber)
+    else
     {
-      targetNum = localHighestBlockNumber;
-      NS_LOG_DEBUG("newpush 校对");
+      NewBlock();
+      pullUpdateBCStatus();
+      if (targetNum < localHighestBlockNumber)
+      {
+        targetNum = localHighestBlockNumber;
+      }
     }
-
-    std::string filename = "blockdata/initiation_data.txt";
-    temporaryBlock = ndnbcDataUtils::createTempBlock(nameOfNode, blockChain, filename);
-    ndnbcDataUtils::addBlock2BC(temporaryBlock, addedToBC, blockChain, localHighestBlockNumber, nameOfNode);
-    pullUpdateBCStatus();
+    return;
   }
 
   void
@@ -100,7 +99,6 @@ namespace ns3
     if (targetNum < localHighestBlockNumber)
     {
       targetNum = localHighestBlockNumber;
-      NS_LOG_DEBUG("make chain 校对");
     }
   }
 

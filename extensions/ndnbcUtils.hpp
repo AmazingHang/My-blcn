@@ -42,26 +42,40 @@ namespace ns3
     }
     else if (receivedBlockNumber < localHighestBlockNumber)
     {
-      // pullUpdateBCStatus();
-      handlePullNuLessThanLocalHighest(interest);
+      if (my_status == IDLE)
+      {
+        pullUpdateBCStatus();
+        my_status = TEMP_UPDATED;
+      }
+      else
+      {
+        return;
+      }
+      // handlePullNuLessThanLocalHighest(interest);
     }
   }
 
   // A.a 处理收到的区块号大于本地最高区块号的情况
   void ndnBlockchainApp::handlePullNumGreaterThanLocalHighest(int receivedBlockNumber)
   {
-    if (targetNum < receivedBlockNumber) // 如果有更新的目标
+    switch (my_status)
     {
-      maxNetNum = receivedBlockNumber;
-
-      if (targetNum > localHighestBlockNumber) // 如果正在更新
+    case UPDATING_TARGET:
+      if (targetNum < receivedBlockNumber) // 如果正在更新
       {
-        requestSpecificStatus(maxNetNum, targetNum);
+        requestSpecificStatus(receivedBlockNumber, targetNum);
       }
-      else // 如果未更新
-      {
-        requestSpecificStatus(maxNetNum, localHighestBlockNumber);
-      }
+      break;
+    case IDLE:
+      my_status = UPDATING_TARGET;
+      requestSpecificStatus(receivedBlockNumber, localHighestBlockNumber);
+      break;
+    case TEMP_UPDATED:
+      my_status = UPDATING_TARGET;
+      requestSpecificStatus(receivedBlockNumber, localHighestBlockNumber);
+      break;
+    default:
+      break;
     }
     return;
   }
@@ -86,19 +100,33 @@ namespace ns3
   // B 处理到来的区块兴趣
   void ndnBlockchainApp::handleInterest_UpdateSpecific(std::shared_ptr<const ndn::Interest> &interest, int receivedBlockNumber, int receivedTargetNumber)
   {
-    if (receivedTargetNumber > targetNum)
+    switch (my_status)
     {
-      maxNetNum = receivedTargetNumber;
-      if (targetNum > localHighestBlockNumber) // 如果正在更新
+    case IDLE:
+      if (receivedTargetNumber > localHighestBlockNumber)
+      {
+        my_status = UPDATING_TARGET;
+        NS_LOG_DEBUG("未更新，收到update兴趣，更新目标值");
+        requestSpecificStatus(receivedTargetNumber, targetNum);
+      }
+      break;
+    case TEMP_UPDATED:
+      if (receivedTargetNumber > localHighestBlockNumber)
+      {
+        my_status = UPDATING_TARGET;
+        NS_LOG_DEBUG("未更新，收到update兴趣，更新目标值");
+        requestSpecificStatus(receivedTargetNumber, targetNum);
+      }
+      break;
+    case UPDATING_TARGET:
+      if (receivedTargetNumber > targetNum)
       {
         NS_LOG_DEBUG("正在更新，收到update兴趣，更新目标值");
-        requestSpecificStatus(maxNetNum, targetNum);
+        requestSpecificStatus(receivedTargetNumber, targetNum);
       }
-      else // 如果未更新,且需要更新
-      {
-        NS_LOG_DEBUG("未更新，收到update兴趣，更新目标值");
-        requestSpecificStatus(maxNetNum, localHighestBlockNumber);
-      }
+      break;
+    default:
+      break;
     }
     // int originNum = std::stoi(vec[3]); // 用于计算差值的区块
     //  NS_LOG_DEBUG("receivedBlockNumber:" << receivedBlockNumber << " localHighestBlockNumber: " << localHighestBlockNumber);
@@ -106,19 +134,26 @@ namespace ns3
     if (requiredBlock.hashThis == 0)                                                          // 如果未找到对应区块，则转发此兴趣区块
     {
       BBlock findBlockStore = ndnbcStatusUtils::findBlockByNum(blockStore, receivedBlockNumber);
-      if (findBlockStore.hashThis == 0)
+      if (findBlockStore.hashThis != 0)
+        requiredBlock = findBlockStore;
+      else
+      {
+        NS_LOG_DEBUG("未找到区块");
         return;
+      }
     }
-    // NS_LOG_DEBUG("找到对应区块");
+
     std::string blockContent = ndnbcDataUtils::generateBlockContentString(requiredBlock);
     if (targetNum > localHighestBlockNumber)
     {
       blockContent += "/" + std::to_string(targetNum); // 把本地的最高区块号发送出去
       SendData(interest, blockContent);
-      return;
     }
-    blockContent += "/" + std::to_string(localHighestBlockNumber); // 把本地的最高区块号发送出去
-    SendData(interest, blockContent);
+    else
+    {
+      blockContent += "/" + std::to_string(localHighestBlockNumber); // 把本地的最高区块号发送出去
+      SendData(interest, blockContent);
+    };
     return;
   }
 
@@ -161,17 +196,8 @@ namespace ns3
   {
     if (targetNum < receivedNum) // 如果有更新的目标
     {
-      maxNetNum = receivedNum;
-      if (targetNum > localHighestBlockNumber) // 如果正在更新
-      {
-        NS_LOG_DEBUG("收到区块后，已有目标值，更新目标值发送区块请求兴趣" << maxNetNum);
-        requestSpecificStatus(maxNetNum, targetNum);
-      }
-      else // 如果未更新
-      {
-        NS_LOG_DEBUG("收到区块后，更新目标值发送区块请求兴趣");
-        requestSpecificStatus(maxNetNum, localHighestBlockNumber);
-      }
+      NS_LOG_DEBUG("收到区块后，更新目标值发送区块请求兴趣");
+      requestSpecificStatus(receivedNum, targetNum);
     }
 
     // NS_LOG_DEBUG("目标未完成,目标: " << targetNum << "当前： " << localHighestBlockNumber);
@@ -192,8 +218,7 @@ namespace ns3
       if (localHighestBlockNumber == targetNum)                                           // 当达到目标时，判断是否需要进一步更新
       {
         NS_LOG_DEBUG("完成目标: " << targetNum);
-        return;
-        //  handleUpdateCompletion();
+        my_status = IDLE;
       }
       return;
     }
