@@ -90,11 +90,11 @@ namespace ns3
         }
 
         // 所有节点获取全网最高区块号
+        // 所有节点获取全网最高区块号
         for (auto &app : apps)
         {
             Simulator::Schedule(Seconds(10.0), &ndnBlockchainApp::pullUpdateBCStatus, app);
         }
-
         // 挖出新区块并推送
         Simulator::Schedule(Seconds(15.000), &ndnBlockchainApp::NewBlockandPush, apps[14]);
 

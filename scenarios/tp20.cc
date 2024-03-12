@@ -110,12 +110,16 @@ namespace ns3
                 Simulator::Schedule(Seconds(1.000), &ndnBlockchainApp::makeBlockchain, apps[i], 100);
             }
         }
-        for (int i = 0; i < 20; i++)
-        {
-            Simulator::Schedule(Seconds(5.0), &ndnBlockchainApp::pullUpdateBCStatus, apps[i]);
-        }
+
+        Simulator::Schedule(Seconds(5.0), &ndnBlockchainApp::pullUpdateBCStatus, apps[1]);
 
         Simulator::Schedule(Seconds(10.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(15.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(20.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(25.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(30.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(35.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(40.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
 
         Simulator::Stop(Seconds(endTime * 2));
         // SCHEDULER END

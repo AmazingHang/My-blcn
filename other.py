@@ -7,7 +7,7 @@ finish_pull_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:OnInterest\(\): \[I
 new_block_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:SendPacket\(\): \[INFO \] Consumer > Interest for \/ndnblockchain\/request\/newblock\/(\d+)\/"
 receive_new_block_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:handleData_ReceivedBlock\(\): \[DEBUG\] 完成目标: 101"
 hop_count_pattern = r"\+(\d+\.\d+)s (\d+) ndnBlockchainApp:OnInterest\(\): \[DEBUG\] ====Hop count: (\d+)"
-data_file = "./out.log"
+data_file = "./tp40-mul.log"
 node_num = 20
 finish_block_nodes_time = {}
 receive_new_block_nodes_time = {}
@@ -19,8 +19,8 @@ test_sentence = (
 )
 test_match = re.match(finish_pattern, test_sentence)
 print(test_match)
-start_time = 10
-new_block_start_time = 15.0
+start_time = 5
+new_block_start_time = 10.0
 with open(data_file, "r", encoding="UTF-8") as file:
     for line in file:
         finish_pull_match = re.match(finish_pull_pattern, line)

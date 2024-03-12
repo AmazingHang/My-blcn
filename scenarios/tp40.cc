@@ -88,15 +88,21 @@ namespace ns3
         {
             Simulator::Schedule(Seconds(1.000), &ndnBlockchainApp::makeBlockchain, apps[i], initVector[i]);
         }
-        // 所有节点获取全网最高区块号
-        for (auto &app : apps)
-        {
-            Simulator::Schedule(Seconds(5.0), &ndnBlockchainApp::pullUpdateBCStatus, app);
-        }
+        // // 所有节点获取全网最高区块号
+        // for (auto &app : apps)
+        // {
+        //     Simulator::Schedule(Seconds(5.0), &ndnBlockchainApp::pullUpdateBCStatus, app);
+        // }
 
+        Simulator::Schedule(Seconds(5.0), &ndnBlockchainApp::pullUpdateBCStatus, apps[1]);
         // 挖出新区块并推送
-        Simulator::Schedule(Seconds(10.000), &ndnBlockchainApp::NewBlockandPush, apps[14]);
-
+        Simulator::Schedule(Seconds(10.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(15.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(20.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(25.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(30.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(35.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
+        Simulator::Schedule(Seconds(40.0), &ndnBlockchainApp::NewBlockandPush, apps[14]);
         Simulator::Stop(Seconds(endTime * 2));
         // SCHEDULER END
         Simulator::Run();
